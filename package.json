@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build && cp out/index.html out/404.html"
   },
   "dependencies": {
     "next": "^15.5.24",
